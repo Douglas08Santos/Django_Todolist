@@ -1,0 +1,11 @@
+{% include 'partials/header.html' %}
+    <ul class="todoList">
+        {% for todo in todos%}
+            <li><a href="/details/{{todo.id}}">{{todo.title}}</a>: {{todo.description}}</li>
+        {% endfor %}
+    </ul>
+    <div class="footer">
+        <span>You have <span class="pendingTasks"></span> pending tasks</span><br>
+        <button>Clear all</button>
+    </div>
+{% include 'partials/footer.html' %}

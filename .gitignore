@@ -1,0 +1,5 @@
+.idea
+todo/__pycache__
+todolist/__pycache__
+venv
+db.sqlite3
